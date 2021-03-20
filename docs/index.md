@@ -10,21 +10,7 @@ Owncloud can be installed using [**Owncloud zip** or **tarball**](https://ownclo
 - [Prerequisites](#Prerequisites)
 - [Preparation](#Preparation)
   * [Create the occ Helper Script](#Create the occ Helper Script)
-- [Highlights](#highlights)
-- [Usage](#usage)
-- [API](#api)
-  * [toc.plugin](#tocplugin)
-  * [toc.json](#tocjson)
-  * [toc.insert](#tocinsert)
-  * [Utility functions](#utility-functions)
-- [Options](#options)
-  * [options.append](#optionsappend)
-  * [options.filter](#optionsfilter)
-  * [options.slugify](#optionsslugify)
-  * [options.bullets](#optionsbullets)
-  * [options.maxdepth](#optionsmaxdepth)
-  * [options.firsth1](#optionsfirsth1)
-  * [options.stripHeadingTags](#optionsstripheadingtags)
+
 - [About](#about)
 
 
