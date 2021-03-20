@@ -10,10 +10,12 @@ This is an ultra-short guide to installing ownCloud on a fresh installation of U
 # Table of Contents
  - [Prerequisites](#Prerequisites)
  - [Preparation](#Preparation)
-  * [Create the occ Helper Scrip](#Create the occ Helper Scrip)
-  * [Install the Required Packages](#Install the Required Packages)
-  * [Install the Recommended Packages](#Install the Recommended Packages)
-  * 
+   * [Create the occ Helper Scrip](#Create the occ Helper Scrip)
+   * [Install the Required Packages](#Install the Required Packages)
+   * [Install the Recommended Packages](#Install the Recommended Packages)
+
+
+
 ## Prerequisites
 
 * A fresh installation of [Ubuntu 20.04](https://www.ubuntu.com/download/server) with SSH enabled.
