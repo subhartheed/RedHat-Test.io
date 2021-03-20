@@ -6,10 +6,10 @@ ownCloud is an open-source file sync, share and content collaboration software t
 The ownCloud Virtual File System (VFS) allows users to sync full directory trees without filling up their devices. It syncs virtual files, i.e. metadata about the kind, size and date of a file, only transferring the full file when needed. Its frictionless user experience keeps staff from using unsanctioned and unsafe means of file sharing. Its self-service features empower users and reduce work load for admins.
 
 This is a quickstart guide addressing the following functionalities:
-- [Installation and Configuration of an Owncloud Server](#Installation-and-Configuration-of-an-Owncloud-Server)
-- [Connecting Users to the Owncloud Server](#Connecting-Users-to-the-Owncloud-Server)
-- [Add a User Account](#Add-a-User-Account)
-- [Connecting to the Owncloud Server using a Desktop or Mobile Client](#Connecting-to-the-Owncloud-Server-using-a-Desktop-or-Mobile-Client)
+- [Installation and Configuration of an Owncloud Server](#markdown-header-Installation-and-Configuration-of-an-Owncloud-Server)
+- [Connecting Users to the Owncloud Server](#markdown-header-Connecting-Users-to-the-Owncloud-Server)
+- [Add a User Account](#markdown-header-Add-a-User-Account)
+- [Connecting to the Owncloud Server using a Desktop or Mobile Client](#markdown-header-Connecting-to-the-Owncloud-Server-using-a-Desktop-or-Mobile-Client)
 
 ## Installation and Configuration of an Owncloud Server
 Owncloud can be installed using [**Owncloud zip** or **tarball**](https://owncloud.com/download-server/) for production environments. They contain all supported community and enterprise apps. Upgrading to Enterprise only requires a licence key. These packages offer the most customizable installation method for admin users.
