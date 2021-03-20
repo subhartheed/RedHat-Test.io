@@ -44,7 +44,7 @@ ownCloud is an enterprise file sharing service for online collaboration and stor
   
 The Admin can add/create a new user by the following:
   1. Enter the new user’s **Login Name** and the initial **Password**.
-  2. Assign **Groups** membership. This is an optional step.
+  2. Assign memberships to different **Groups**. This is an optional step.
   3. Click **Create**.      
            
 ![Add User](https://github.com/subhartheed/RedHat-Test.io/blob/main/NewUser1.PNG)
