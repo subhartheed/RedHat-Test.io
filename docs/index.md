@@ -58,7 +58,6 @@ Run the following commands in your terminal to complete the installation.
 First, ensure that all the installed packages are entirely up to date, and that PHP is available in the APT repository.
 To do so, follow the instructions below:
 
-----
 `apt update && \
   apt upgrade -y`
 ----
