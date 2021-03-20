@@ -7,24 +7,6 @@ Owncloud can be installed using [**Owncloud zip** or **tarball**](https://ownclo
 ## Install ownCloud on Ubuntu 20.04
 This is an ultra-short guide to installing ownCloud on a fresh installation of Ubuntu 20.04.
 
-### Table of Contents
-
-- [Prerequisites](#Prerequisites)
-- [Preparation](#Preparation)
-  * [Create the occ Helper Script](#Create the occ Helper Script)
-
-- [About](#about)
-
-
-
-
-
-
-
-
-
-
-
 
 
 This is an ultra-short guide to installing ownCloud on a fresh installation of Ubuntu 20.04.
@@ -66,7 +48,7 @@ Make the helper script executable:
 chmod +x /usr/local/bin/occ
 ----
 
-=== Install the Required Packages
+### Install the Required Packages
 
 ----
 apt install -y \
@@ -84,7 +66,7 @@ apt install -y \
 
 Note : php 7.4 is the default version installable with Ubuntu 20.04
 
-=== Install the Recommended Packages
+### Install the Recommended Packages
 
 The package php-smbclient was removed from the official repository.
 It is available in the ondrej/php repository (ppa).
@@ -111,32 +93,32 @@ apt install -y \
   php-smbclient coreutils php-ldap
 ----
 
-== Installation
+## Installation
 
-=== Configure Apache
+### Configure Apache
 
-==== Change the Document Root
+#### Change the Document Root
 
 ----
 sed -i "s#html#owncloud#" /etc/apache2/sites-available/000-default.conf
 service apache2 restart
 ----
 
-==== Create a Virtual Host Configuration
+#### Create a Virtual Host Configuration
 
 [source,console,subs="attributes+"]
 ----
 include::{examplesdir}installation/ubuntu/18.04/create-vhost-config.sh[]
 ----
 
-==== Enable the Virtual Host Configuration
+#### Enable the Virtual Host Configuration
 
 ----
 a2ensite owncloud.conf
 service apache2 reload
 ----
 
-=== Configure the Database
+### Configure the Database
 
 ----
 mysql -u root -e "CREATE DATABASE IF NOT EXISTS owncloud; \
@@ -145,7 +127,7 @@ GRANT ALL PRIVILEGES ON owncloud.* \
   IDENTIFIED BY 'password'";
 ----
 
-==== Enable the Recommended Apache Modules
+#### Enable the Recommended Apache Modules
 
 ----
 echo "Enabling Apache Modules"
@@ -153,7 +135,7 @@ a2enmod dir env headers mime rewrite setenvif
 service apache2 reload
 ----
 
-=== Download ownCloud
+### Download ownCloud
 
 [source,console,subs="attributes+"]
 ----
@@ -163,7 +145,7 @@ tar -xjf owncloud-{latest-download-version}.tar.bz2 && \
 chown -R www-data. owncloud
 ----
 
-=== Install ownCloud
+### Install ownCloud
 
 ----
 occ maintenance:install \
@@ -175,14 +157,14 @@ occ maintenance:install \
     --admin-pass "admin"
 ----
 
-=== Configure ownCloud's Trusted Domains
+### Configure ownCloud's Trusted Domains
 
 ----
 myip=$(hostname -I|cut -f1 -d ' ')
 occ config:system:set trusted_domains 1 --value="$myip"
 ----
 
-=== Set Up a Cron Job
+### Set Up a Cron Job
 
 Set your background job mode to cron
 
@@ -213,7 +195,7 @@ touch /var/log/ldap-sync/user-sync.log
 chown {webserver-user}. /var/log/ldap-sync/user-sync.log
 ----
 
-=== Configure Caching and File Locking
+### Configure Caching and File Locking
 
 Execute these commands:
 
@@ -231,7 +213,7 @@ occ config:system:set \
    --type json
 ----
 
-=== Configure Log Rotation
+### Configure Log Rotation
 
 Execute this command to set up {logrotate-url}[log rotation].
 
@@ -240,7 +222,7 @@ Execute this command to set up {logrotate-url}[log rotation].
 include::{examplesdir}installation/ubuntu/18.04/configure-log-rotation.sh[]
 ----
 
-==== Finalise the Installation
+#### Finalise the Installation
 
 Make sure the permissions are correct
 ----
