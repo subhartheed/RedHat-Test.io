@@ -35,7 +35,7 @@ After the installation of ownCloud server, you must configure it as per the guid
 - [Mimetypes Management](https://doc.owncloud.com/server/10.6/admin_manual/configuration/mimetypes/)
 - [Server Configuration](https://doc.owncloud.com/server/10.6/admin_manual/configuration/server/)
 - [User](https://doc.owncloud.com/server/10.6/admin_manual/configuration/user/)
-## Connecting Users to the ownCloud Server
+## Enable Users to connect to the ownCloud Server
 
 
 ## Add a User Account
