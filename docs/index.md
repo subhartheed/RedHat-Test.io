@@ -6,12 +6,12 @@ ownCloud is an open-source file sync, share and content collaboration software t
 The ownCloud Virtual File System (VFS) allows users to sync full directory trees without filling up their devices. It syncs virtual files, i.e. metadata about the kind, size and date of a file, only transferring the full file when needed. Its frictionless user experience keeps staff from using unsanctioned and unsafe means of file sharing. Its self-service features empower users and reduce work load for admins.
 
 This is a quickstart guide addressing the following functionalities:
-- [Installation and Configuration of an Owncloud Server](#user-content-Installation-and-Configuration-of-an-Owncloud-Server)
-- [Connecting Users to the Owncloud Server](#user-content-Connecting-Users-to-the-Owncloud-Server)
-- [Add a User Account](#user-content-Add-a-User-Account)
-- [Connecting to the Owncloud Server using a Desktop or Mobile Client](#user-content-Connecting-to-the-Owncloud-Server-using-a-Desktop-or-Mobile-Client)
+- [Installation and Configuration of an Owncloud Server](#installation-and-configuration-of-an-owncloud-server)
+- [Connecting Users to the Owncloud Server](#connecting-users-to-the-owncloud-server)
+- [Add a User Account](#add-a-user-account)
+- [Connecting to the Owncloud Server using a Desktop or Mobile Client](#connecting-to-the-owncloud-server-using-a-desktop-or-mobile-client)
 
-## Installation and Configuration of an Owncloud Server(#user-content-Installation-and-Configuration-of-an-Owncloud-Server)
+## Installation and Configuration of an Owncloud Server 
 Owncloud can be installed using [**Owncloud zip** or **tarball**](https://owncloud.com/download-server/) for production environments. They contain all supported community and enterprise apps. Upgrading to Enterprise only requires a licence key. These packages offer the most customizable installation method for admin users.
 As an admin, you can install ownCloud in the following ways:
 - [Manual Installation](https://doc.owncloud.com/server/10.6/admin_manual/installation/manual_installation/)
