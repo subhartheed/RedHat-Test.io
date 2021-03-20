@@ -10,7 +10,7 @@ This is an ultra-short guide to installing ownCloud on a fresh installation of U
 
 ## Prerequisites
 
-* A fresh installation of https://www.ubuntu.com/download/server[Ubuntu 20.04] with SSH enabled.
+* A fresh installation of [Ubuntu 20.04](https://www.ubuntu.com/download/server) with SSH enabled.
 * This guide assumes that you are connected as the root user.
 * This guide assumes your ownCloud directory is located in `/var/www/owncloud/`
 
