@@ -49,16 +49,7 @@ The Admin can add/create a new user by the following:
            
 ![Add User](https://github.com/subhartheed/RedHat-Test.io/blob/main/NewUser1.PNG)
 
-
-**Note**: Login names may contain letters (a-z, A-Z), numbers (0-9), dashes (-), underscores (_), periods (.), and at signs (@). ownCloud usernames cannot be changed. These are user’s permanent-owned cloud user IDs. However, user’s **Full Name** can be changed. The admin can also edit the passwords and can change group assignments as and when needed. This is a useful mechanism for delegating some admin chores and also enabling groups to manage themselves.
-
-After creating the user, you may fill in their **Full Name** if it is different from the login name or you can leave it for the user to complete.
-        
- 
-**Note**: Press _Ctrl-R_ to refresh the page. This is done to make sure your new entry is visible.  
-
-> To summarize, the steps involved in creating or adding a new user are entering a name and password and delegating the user to a group. The new user can now log in to the ownCloud server and start collaborating with other users.
-          
+         
 
 ## Connecting to the Owncloud Server using a Desktop or Mobile Client
 The **ownCloud Desktop Synchronization Client** is used for synchronizing files with the desktop computer. As a user, you can download the latest version of the ownCloud Desktop Synchronization Client from the [ownCloud download page](https://owncloud.org/download/), and can run on various platforms like Microsoft Windows, Mac OS X, and variants of Linux distributions.  
