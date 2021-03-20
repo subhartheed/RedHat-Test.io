@@ -23,12 +23,7 @@ Owncloud can be installed using [**Owncloud zip** or **tarball**](https://ownclo
 
 
 
-= Install ownCloud on Ubuntu 20.04
-:toc: right
-:logrotate-url: https://linux.die.net/man/8/logrotate
-:webserver-user: www-data
-:webserver-group: www-data
-:install-directory: /var/www/owncloud
+
 
 This is an ultra-short guide to installing ownCloud on a fresh installation of Ubuntu 20.04.
 Run the following commands in your terminal to complete the installation.
