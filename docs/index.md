@@ -4,8 +4,38 @@
 
 Owncloud can be installed using [**Owncloud zip** or **tarball**](https://owncloud.com/download-server/) for production environments. They contain all supported community and enterprise apps. Upgrading to Enterprise only requires a licence key. These packages offer the most customizable installation method for admin users.
 
-Install ownCloud on Ubuntu 18.04
-## Table of Contents
+## Install ownCloud on Ubuntu 18.04
+### Table of Contents
+
+- [Prerequisites](#Prerequisites)
+- [CLI](#cli)
+- [Highlights](#highlights)
+- [Usage](#usage)
+- [API](#api)
+  * [toc.plugin](#tocplugin)
+  * [toc.json](#tocjson)
+  * [toc.insert](#tocinsert)
+  * [Utility functions](#utility-functions)
+- [Options](#options)
+  * [options.append](#optionsappend)
+  * [options.filter](#optionsfilter)
+  * [options.slugify](#optionsslugify)
+  * [options.bullets](#optionsbullets)
+  * [options.maxdepth](#optionsmaxdepth)
+  * [options.firsth1](#optionsfirsth1)
+  * [options.stripHeadingTags](#optionsstripheadingtags)
+- [About](#about)
+
+
+
+
+
+
+
+
+
+
+
 :logrotate-url: https://linux.die.net/man/8/logrotate
 :webserver-user: www-data
 :webserver-group: www-data
@@ -14,7 +44,7 @@ Install ownCloud on Ubuntu 18.04
 This is an ultra-short guide to installing ownCloud on a fresh installation of Ubuntu 18.04.
 Run the following commands in your terminal to complete the installation.
 
-== Prerequisites
+## Prerequisites
 
 * A fresh installation of https://releases.ubuntu.com/18.04[Ubuntu 18.04] with SSH enabled.
 * This guide assumes that you are connected as the root user.
