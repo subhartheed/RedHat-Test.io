@@ -8,10 +8,6 @@ Owncloud can be installed using [**Owncloud zip** or **tarball**](https://ownclo
 This is an ultra-short guide to installing ownCloud on a fresh installation of Ubuntu 20.04.
 
 
-
-This is an ultra-short guide to installing ownCloud on a fresh installation of Ubuntu 20.04.
-Run the following commands in your terminal to complete the installation.
-
 ## Prerequisites
 
 * A fresh installation of https://www.ubuntu.com/download/server[Ubuntu 20.04] with SSH enabled.
