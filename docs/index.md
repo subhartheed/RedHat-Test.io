@@ -40,7 +40,8 @@ First, ensure that all the installed packages are entirely up to date, and that 
 To do so, follow the instructions below:
 
 `apt update && \
-  apt upgrade -y`
+
+ apt upgrade -y`
 ----
 
 ### Create the occ Helper Script
