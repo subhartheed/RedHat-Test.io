@@ -8,7 +8,8 @@ Owncloud can be installed using [**Owncloud zip** or **tarball**](https://ownclo
 ### Table of Contents
 
 - [Prerequisites](#Prerequisites)
-- [CLI](#cli)
+- [Preparation](#Preparation)
+  * [Create the occ Helper Script](#Create the occ Helper Script)
 - [Highlights](#highlights)
 - [Usage](#usage)
 - [API](#api)
@@ -36,26 +37,27 @@ Owncloud can be installed using [**Owncloud zip** or **tarball**](https://ownclo
 
 
 
+= Install ownCloud on Ubuntu 20.04
+:toc: right
 :logrotate-url: https://linux.die.net/man/8/logrotate
 :webserver-user: www-data
 :webserver-group: www-data
 :install-directory: /var/www/owncloud
 
-This is an ultra-short guide to installing ownCloud on a fresh installation of Ubuntu 18.04.
+This is an ultra-short guide to installing ownCloud on a fresh installation of Ubuntu 20.04.
 Run the following commands in your terminal to complete the installation.
 
 ## Prerequisites
 
-* A fresh installation of https://releases.ubuntu.com/18.04[Ubuntu 18.04] with SSH enabled.
+* A fresh installation of https://www.ubuntu.com/download/server[Ubuntu 20.04] with SSH enabled.
 * This guide assumes that you are connected as the root user.
 * This guide assumes your ownCloud directory is located in `/var/www/owncloud/`
 
-== Preparation
+## Preparation
 
 First, ensure that all the installed packages are entirely up to date, and that PHP is available in the APT repository.
 To do so, follow the instructions below:
 
-[source,console,subs="attributes+"]
 ----
 apt update && \
   apt upgrade -y
@@ -70,7 +72,6 @@ Create a helper script to simplify running xref:configuration/server/occ_command
 FILE="/usr/local/bin/occ"
 /bin/cat <<EOM >$FILE
 #! /bin/bash
-
 cd {install-directory}
 sudo -u {webserver-user} /usr/bin/php {install-directory}/occ "\$@"
 EOM
@@ -78,14 +79,12 @@ EOM
 
 Make the helper script executable:
 
-[source,console,subs="attributes+"]
 ----
 chmod +x /usr/local/bin/occ
 ----
 
 === Install the Required Packages
 
-[source,console,subs="attributes+"]
 ----
 apt install -y \
   apache2 \
@@ -100,17 +99,34 @@ apt install -y \
   wget
 ----
 
+Note : php 7.4 is the default version installable with Ubuntu 20.04
+
 === Install the Recommended Packages
 
-[source,console,subs="attributes+"]
+The package php-smbclient was removed from the official repository.
+It is available in the ondrej/php repository (ppa).
+Add ondrej’s ppa with these commands:
+
 ----
-apt install -y \
-  ssh bzip2 sudo cron rsync curl jq \
-  inetutils-ping smbclient php-libsmbclient \
-  php-smbclient coreutils php-ldap
+sudo add-apt-repository ppa:ondrej/php
+sudo apt-get update
+echo "deb http://ppa.launchpad.net/ondrej/php/ubuntu $(lsb_release -cs) main" | tee /etc/apt/sources.list.d/php.list
 ----
 
-WARNING: Ubuntu 18.04 includes smbclient 4.7.6, which has a known limitation of only using version 1 of the SMB protocol.
+and add the key:
+
+----
+apt-key adv --recv-keys --keyserver hkps://keyserver.ubuntu.com:443 4F4EA0AAE5267A6C
+----
+
+Now you can install the recommended packages using the following command:
+
+----
+apt install -y \
+  ssh bzip2 rsync curl jq \
+  inetutils-ping smbclient\
+  php-smbclient coreutils php-ldap
+----
 
 == Installation
 
@@ -118,10 +134,8 @@ WARNING: Ubuntu 18.04 includes smbclient 4.7.6, which has a known limitation of 
 
 ==== Change the Document Root
 
-[source,console,subs="attributes+"]
 ----
 sed -i "s#html#owncloud#" /etc/apache2/sites-available/000-default.conf
-
 service apache2 restart
 ----
 
@@ -134,7 +148,6 @@ include::{examplesdir}installation/ubuntu/18.04/create-vhost-config.sh[]
 
 ==== Enable the Virtual Host Configuration
 
-[source,console,subs="attributes+"]
 ----
 a2ensite owncloud.conf
 service apache2 reload
@@ -142,9 +155,7 @@ service apache2 reload
 
 === Configure the Database
 
-[source,console,subs="attributes+"]
 ----
-service mysql start
 mysql -u root -e "CREATE DATABASE IF NOT EXISTS owncloud; \
 GRANT ALL PRIVILEGES ON owncloud.* \
   TO owncloud@localhost \
@@ -153,10 +164,8 @@ GRANT ALL PRIVILEGES ON owncloud.* \
 
 ==== Enable the Recommended Apache Modules
 
-[source,console,subs="attributes+"]
 ----
 echo "Enabling Apache Modules"
-
 a2enmod dir env headers mime rewrite setenvif
 service apache2 reload
 ----
@@ -173,7 +182,6 @@ chown -R www-data. owncloud
 
 === Install ownCloud
 
-[source,console,subs="attributes+"]
 ----
 occ maintenance:install \
     --database "mysql" \
@@ -186,7 +194,6 @@ occ maintenance:install \
 
 === Configure ownCloud's Trusted Domains
 
-[source,console,subs="attributes+"]
 ----
 myip=$(hostname -I|cut -f1 -d ' ')
 occ config:system:set trusted_domains 1 --value="$myip"
@@ -196,7 +203,6 @@ occ config:system:set trusted_domains 1 --value="$myip"
 
 Set your background job mode to cron
 
-[source,console,subs="attributes+"]
 ----
 occ background:cron
 ----
@@ -214,14 +220,14 @@ chmod 0600 /var/spool/cron/crontabs/{webserver-user}
 If you need to sync your users from an LDAP or Active Directory Server, add this additional xref:configuration/server/background_jobs_configuration.adoc[Cron job]. Every 15 minutes this cron job will sync LDAP users in ownCloud and disable the ones who are not available for ownCloud. Additionally, you get a log file in `/var/log/ldap-sync/user-sync.log` for debugging.
 ====
 
-[source,console,subs="attributes+"]
+[source,subs="attributes+"]
 ----
-echo "*/15 * * * * /var/www/owncloud/occ user:sync 'OCA\User_LDAP\User_Proxy' -m disable -vvv >> /var/log/ldap-sync/user-sync.log 2>&1" > /var/spool/cron/crontabs/www-data
-chown www-data.crontab  /var/spool/cron/crontabs/www-data
-chmod 0600  /var/spool/cron/crontabs/www-data
+echo "*/15 * * * * /var/www/owncloud/occ user:sync 'OCA\User_LDAP\User_Proxy' -m disable -vvv >> /var/log/ldap-sync/user-sync.log 2>&1" >> /var/spool/cron/crontabs/{webserver-user}
+chown {webserver-user}.crontab  /var/spool/cron/crontabs/{webserver-user}
+chmod 0600  /var/spool/cron/crontabs/{webserver-user}
 mkdir -p /var/log/ldap-sync
 touch /var/log/ldap-sync/user-sync.log
-chown www-data. /var/log/ldap-sync/user-sync.log
+chown {webserver-user}. /var/log/ldap-sync/user-sync.log
 ----
 
 === Configure Caching and File Locking
@@ -233,13 +239,9 @@ Execute these commands:
 occ config:system:set \
    memcache.local \
    --value '\OC\Memcache\APCu'
-
 occ config:system:set \
    memcache.locking \
    --value '\OC\Memcache\Redis'
-
-service redis-server start
-
 occ config:system:set \
    redis \
    --value '{"host": "127.0.0.1", "port": "{std-port-redis}"}' \
@@ -265,6 +267,4 @@ chown -R www-data. owncloud
 
 **ownCloud is now installed.
 You can confirm that it is ready to use by pointing your web browser to your ownCloud installation.**
-
-
 
