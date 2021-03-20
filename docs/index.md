@@ -47,7 +47,7 @@ The Admin can add/create a new user by the following:
   2. Assign memberships to different **Groups**. This is an optional step.
   3. Click **Create**.      
            
-![Add User](https://github.com/subhartheed/RedHat-Test.io/blob/main/NewUser1.png)
+![Add User](https://github.com/subhartheed/RedHat-Test.io/blob/main/NewUser1.PNG)
 
 
 **Note**: Login names may contain letters (a-z, A-Z), numbers (0-9), dashes (-), underscores (_), periods (.), and at signs (@). ownCloud usernames cannot be changed. These are user’s permanent-owned cloud user IDs. However, user’s **Full Name** can be changed. The admin can also edit the passwords and can change group assignments as and when needed. This is a useful mechanism for delegating some admin chores and also enabling groups to manage themselves.
