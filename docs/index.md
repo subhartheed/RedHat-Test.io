@@ -16,6 +16,7 @@ Owncloud can be installed using [**Owncloud zip** or **tarball**](https://ownclo
 As an admin, you can install ownCloud in the following ways:
 - [Manual Installation](https://doc.owncloud.com/server/10.6/admin_manual/installation/manual_installation/)
 - [Installation using Docker](https://doc.owncloud.com/server/10.6/admin_manual/installation/docker/)
+
 For 
 ## Connecting Users to the Owncloud Server
 
