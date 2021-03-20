@@ -4,7 +4,7 @@
 
 Owncloud can be installed using [**Owncloud zip** or **tarball**](https://owncloud.com/download-server/) for production environments. They contain all supported community and enterprise apps. Upgrading to Enterprise only requires a licence key. These packages offer the most customizable installation method for admin users.
 
-## Install ownCloud on Ubuntu 20.04
+# Install ownCloud on Ubuntu 20.04
 This is an ultra-short guide to installing ownCloud on a fresh installation of Ubuntu 20.04.
 
 
