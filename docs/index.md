@@ -1,4 +1,4 @@
-# Owncloud - Installation and Usage
+# Owncloud Quickstart Guide - Installation and Usage
 
 You can use the [editor on GitHub](https://github.com/subhartheed/RedHat-Test.io/edit/main/docs/index.md) to maintain and preview the content for your website in Markdown files.
 
