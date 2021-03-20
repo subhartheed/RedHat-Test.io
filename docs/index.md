@@ -49,8 +49,6 @@ The Admin can add/create a new user by the following:
            
 ![Add User](https://github.com/subhartheed/RedHat-Test.io/blob/main/docs/NewUser1.PNG)
 
-         
-
 ## Connecting to the Owncloud Server using a Desktop or Mobile Client
 The **ownCloud Desktop Synchronization Client** is used for synchronizing files with the desktop computer. As a user, you can download the latest version of the ownCloud Desktop Synchronization Client from the [ownCloud download page](https://owncloud.org/download/), and can run on various platforms like Microsoft Windows, Mac OS X, and variants of Linux distributions.  
 
