@@ -4,8 +4,8 @@
 
 Owncloud can be installed using [**Owncloud zip** or **tarball**](https://owncloud.com/download-server/) for production environments. They contain all supported community and enterprise apps. Upgrading to Enterprise only requires a licence key. These packages offer the most customizable installation method for admin users.
 
-= Install ownCloud on Ubuntu 18.04
-:toc: right
+Install ownCloud on Ubuntu 18.04
+## Table of Contents
 :logrotate-url: https://linux.die.net/man/8/logrotate
 :webserver-user: www-data
 :webserver-group: www-data
