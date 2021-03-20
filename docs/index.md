@@ -14,8 +14,8 @@ This is a quickstart guide addressing the following functionalities:
 ## Installation and Configuration of an Owncloud Server
 Owncloud can be installed using [**Owncloud zip** or **tarball**](https://owncloud.com/download-server/) for production environments. They contain all supported community and enterprise apps. Upgrading to Enterprise only requires a licence key. These packages offer the most customizable installation method for admin users.
 As an admin, you can install ownCloud in the following ways:
-- Manual Installation
-- Installation using Docker
+- [Manual Installation](https://doc.owncloud.com/server/10.6/admin_manual/installation/manual_installation/)
+- [Installation using Docker](https://doc.owncloud.com/server/10.6/admin_manual/installation/docker/)
 
 ## Connecting Users to the Owncloud Server
 
