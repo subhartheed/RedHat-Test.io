@@ -63,7 +63,7 @@ apt update && \
   apt upgrade -y
 ----
 
-=== Create the occ Helper Script
+### Create the occ Helper Script
 
 Create a helper script to simplify running xref:configuration/server/occ_command.adoc[occ commands].
 
