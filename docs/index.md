@@ -47,7 +47,7 @@ ownCloud is an enterprise file sharing service for online collaboration and stor
   - Enter the new user’s **Login Name** and the initial **Password**  
   - (Optional) Assign **Groups** membership       
   - Click the **Create** button         
-![Add User](C:\Users\sude\Personal\Red hat\pics\New User1.PNG)
+![Add User](NewUser1.PNG)
 
 
 **Note**: Login names may contain letters (a-z, A-Z), numbers (0-9), dashes (-), underscores (_), periods (.), and at signs (@). ownCloud usernames cannot be changed. These are user’s permanent-owned cloud user IDs. However, user’s **Full Name** can be changed. The admin can also edit the passwords and can change group assignments as and when needed. This is a useful mechanism for delegating some admin chores and also enabling groups to manage themselves.
