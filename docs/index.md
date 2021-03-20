@@ -21,7 +21,6 @@ To do so, follow the instructions below:
 
 `apt update && \
  apt upgrade -y`
-----
 
 ### Create the occ Helper Script
 
