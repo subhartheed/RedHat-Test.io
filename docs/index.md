@@ -9,7 +9,7 @@ Owncloud can be installed using [**Owncloud zip** or **tarball**](https://ownclo
 
 - [Prerequisites](#Prerequisites)
 - [Preparation](#Preparation)
-  * [Create the occ Helper Script](#Create the occ Helper Script)
+ * [Create the occ Helper Script](#Create the occ Helper Script)
 - [Highlights](#highlights)
 - [Usage](#usage)
 - [API](#api)
