@@ -12,6 +12,11 @@ This is a quickstart guide addressing the following functionalities:
 - [Connecting to the Owncloud Server using a Desktop or Mobile Client](#connecting-to-the-owncloud-server-using-a-desktop-or-mobile-client)
 
 ## Installation and Configuration of an Owncloud Server 
+ownCloud server is available in three editions:
+
+- The free community-supported server. This is the core server for all editions.
+- The Standard Subscription for customers who want paid support for the core Server, without Enterprise applications.
+- The Enterprise Subscription provides paid support for the Enterprise Edition. This includes the core Server and Enterprise apps.
 Owncloud can be installed using [**Owncloud zip** or **tarball**](https://owncloud.com/download-server/) for production environments. They contain all supported community and enterprise apps. Upgrading to Enterprise only requires a licence key. These packages offer the most customizable installation method for admin users.
 As an admin, you can install ownCloud in the following ways:
 - [Manual Installation](https://doc.owncloud.com/server/10.6/admin_manual/installation/manual_installation/manual_installation.html)
