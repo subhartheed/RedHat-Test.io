@@ -47,7 +47,7 @@ The Admin can add/create a new user by the following:
   2. Assign memberships to different **Groups**. This is an optional step.
   3. Click **Create**.      
            
-![Add User](https://github.com/subhartheed/RedHat-Test.io/blob/main/NewUser1.PNG)
+![Add User](https://github.com/subhartheed/RedHat-Test.io/blob/main/docs/NewUser1.PNG)
 
          
 
