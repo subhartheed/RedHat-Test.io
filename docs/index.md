@@ -42,11 +42,11 @@ After the installation of ownCloud server, you must configure it as per the guid
 
 ownCloud is an enterprise file sharing service for online collaboration and storage. To access this service, the user needs to have their user account which is created and managed by the **admin group**.  
   
-### Adding or Creating New User Accounts
-
-  - Enter the new user’s **Login Name** and the initial **Password**  
-  - (Optional) Assign **Groups** membership       
-  - Click the **Create** button         
+The Admin can add/create a new user by the following:
+  1. Enter the new user’s **Login Name** and the initial **Password**.
+  2. Assign **Groups** membership. This is an optional step.
+  3. Click **Create**.      
+           
 ![Add User](https://github.com/subhartheed/RedHat-Test.io/blob/main/NewUser1.PNG)
 
 
