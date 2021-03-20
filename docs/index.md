@@ -7,7 +7,7 @@ The ownCloud Virtual File System (VFS) allows users to sync full directory trees
 
 This is a quickstart guide addressing the following functionalities:
 - [Installation and Configuration of an Owncloud Server](#installation-and-configuration-of-an-owncloud-server)
-- [Connecting Users to the Owncloud Server](#connecting-users-to-the-owncloud-server)
+- [Enable Users to connect to the ownCloud Server](#enable-users-to-connect-to-the-owncloud-server)
 - [Add a User Account](#add-a-user-account)
 - [Connecting to the Owncloud Server using a Desktop or Mobile Client](#connecting-to-the-owncloud-server-using-a-desktop-or-mobile-client)
 
