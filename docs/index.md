@@ -18,6 +18,17 @@ As an admin, you can install ownCloud in the following ways:
 - [Installation using Docker](https://doc.owncloud.com/server/10.6/admin_manual/installation/docker/)
 
 You can refer the Quick Installation Guides available for installing ownCloud manually. These are ultra-short guides for installing ownCloud on a fresh installation of [Ubuntu 18.04](https://doc.owncloud.com/server/10.6/admin_manual/installation/quick_guides/ubuntu_18_04.html) and [Ubuntu 20.04](https://doc.owncloud.com/server/10.6/admin_manual/installation/quick_guides/ubuntu_20_04.html). Run the commands as outlined in these guides, in your terminal to complete the installation. 
+
+After the installation of ownCloud server, you must configure it as per the guidelines mentioned in the Configuration Guide. The Configuration Guide is broadly divided into the following chapters:
+- [Database](https://doc.owncloud.com/server/10.6/admin_manual/configuration/database/)
+- [Encryption](https://doc.owncloud.com/server/10.6/admin_manual/configuration/files/encryption/root.html)
+- [External Storage](https://doc.owncloud.com/server/10.6/admin_manual/configuration/files/external_storage/)
+- [Files and Sharing](https://doc.owncloud.com/server/10.6/admin_manual/configuration/files/)
+- [General Topics](https://doc.owncloud.com/server/10.6/admin_manual/configuration/general_topics/)
+- [Full Text Search](https://doc.owncloud.com/server/10.6/admin_manual/configuration/search/)
+- [Mimetypes Management](https://doc.owncloud.com/server/10.6/admin_manual/configuration/mimetypes/)
+- [Server Configuration](https://doc.owncloud.com/server/10.6/admin_manual/configuration/server/)
+- [User](https://doc.owncloud.com/server/10.6/admin_manual/configuration/user/)
 ## Connecting Users to the Owncloud Server
 
 ## Add a User Account
