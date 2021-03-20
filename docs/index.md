@@ -16,6 +16,7 @@ Owncloud can be installed using [**Owncloud zip** or **tarball**](https://ownclo
 As an admin, you can install ownCloud in the following ways:
 - [Manual Installation](https://doc.owncloud.com/server/10.6/admin_manual/installation/manual_installation/)
 - [Installation using Docker](https://doc.owncloud.com/server/10.6/admin_manual/installation/docker/)
+
 You can refer the Quick Installation Guides available for installing ownCloud manually. These are ultra-short guides to installing ownCloud on a fresh installation of Ubuntu 18.04 and Ubuntu 20.04. Run the outlined commands in your terminal to complete the installation. 
 ## Connecting Users to the Owncloud Server
 
