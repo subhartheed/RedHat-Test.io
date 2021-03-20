@@ -40,13 +40,6 @@ After the installation of ownCloud server, you must configure it as per the guid
 
 ## Add a User Account
 
----
-layout: default
-title:  "user accounts"
-permalink: /Adding/
---- 
-
-### Overview 
 ownCloud is an enterprise file sharing service for online collaboration and storage. To access this service, the user needs to have their user account which is created and managed by the **admin group**.  
 
 ### Prerequisites for Adding User Accounts by the Admin Team
