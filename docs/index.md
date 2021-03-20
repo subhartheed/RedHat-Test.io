@@ -36,13 +36,15 @@ After the installation of ownCloud server, you must configure it as per the guid
 - [Server Configuration](https://doc.owncloud.com/server/10.6/admin_manual/configuration/server/)
 - [User](https://doc.owncloud.com/server/10.6/admin_manual/configuration/user/)
 ## Enable Users to connect to the ownCloud Server
+
+
+## Add a User Account
+
 ---
 layout: default
 title:  "user accounts"
 permalink: /Adding/
----
-
-## User Story 3: Adding User Accounts to ownCloud Server  
+--- 
 
 ### Overview 
 ownCloud is an enterprise file sharing service for online collaboration and storage. To access this service, the user needs to have their user account which is created and managed by the **admin group**.  
@@ -82,9 +84,6 @@ After creating the user, you may fill in their **Full Name** if it is different 
 
 > To summarize, the steps involved in creating or adding a new user are entering a name and password and delegating the user to a group. The new user can now log in to the ownCloud server and start collaborating with other users.
           
-
-
-## Add a User Account
 
 ## Connecting to the Owncloud Server using a Desktop or Mobile Client
 
