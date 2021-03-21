@@ -60,6 +60,18 @@ For more information on user configuration and management, refer the [Admin Manu
 
 ## Connecting to the Owncloud Server using a Desktop or Mobile Client
 As a user, you can connect to the ownCloud Server either through a Desktop or Mobile client once the Admin creates your user account.
+Available for Windows, Mac OS X, and various Linux distributions, the ownCloud Desktop Sync client enables you to:
+
+Specify one or more directories on your computer that you want to synchronize to the ownCloud server.
+
+Always have the latest files synchronized, wherever they are located.
+
+Your files are always automatically synchronized between your ownCloud server and local PC.
+
+Because of various technical issues, desktop sync clients older than. 2.2.1 will not allowed to connect and sync with the ownCloud 8.1+ server. It is highly recommended to keep your client updated.
+
+
+
 For accessing ownCloud Server through a Desktop client, do the following:
 1. Open the ownCloud Server on a web browser such as Edge, IE 11 or latest, Firefox 60 ESR or latest, Chrome 66 or latest, or Safari 10 or latest.
 2. Type your username and password.
@@ -70,7 +82,7 @@ For accessing ownCloud Server through a Desktop client, do the following:
 
   ![Files Page](https://raw.githubusercontent.com/subhartheed/RedHat-Test.io/main/docs/filespage.png)
   
-  You can add, remove, or share files on the **Files** page, based on the access privileges set by you (if you are administering the server) or by your server administrator. 
-  For more information, refer [The Web Interface](https://doc.owncloud.com/server/10.6/user_manual/webinterface.html)
+ You can add, remove, or share files on the **Files** page, based on the access privileges set by you (if you are administering the server) or by your server administrator. 
+ For more information, refer [The Web Interface](https://doc.owncloud.com/server/10.6/user_manual/webinterface.html) and [Desktop Client](https://doc.owncloud.com/desktop/2.6/installing.html).
 
 ## Enable Users to connect to the ownCloud Server
