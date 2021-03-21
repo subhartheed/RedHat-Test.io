@@ -55,7 +55,8 @@ The **Login Name** of the user may contain the following:
 - Period (.)
 - @ sign
 
-After creating the user, you may fill their Full Name if it is different from the Login Name, or else leave it for the user to complete. 
+After creating the user, you may fill their Full Name if it is different from the Login Name, or else leave it for the user to complete.
+For more information on user configuration and management, refer the [Admin Manual](https://doc.owncloud.com/server/10.6/admin_manual/configuration/user/). 
 
 ## Connecting to the Owncloud Server using a Desktop or Mobile Client
 The **ownCloud Desktop Synchronization Client** is used for synchronizing files with the desktop computer. As a user, you can download the latest version of the ownCloud Desktop Synchronization Client from the [ownCloud download page](https://owncloud.org/download/), and can run on various platforms like Microsoft Windows, Mac OS X, and variants of Linux distributions.  
