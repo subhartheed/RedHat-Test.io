@@ -2,7 +2,7 @@
 
 **Welcome to ownCloud** 
 
-ownCloud is an open-source file sync, share and content collaboration software that lets different teams to work on data from anywhere, on any device. ownCloud enable organizations to safely store files and make them available to the relevant employees. It creates a single point of access for all file storage that makes it easy to find information, manage permissions and trace usage.
+ownCloud is an open-source file sync, share and content collaboration software that enables different teams to work on data from anywhere, on any device. ownCloud enable organizations to safely store files and make them available to the relevant employees. It creates a single point of access for all file storage that makes it easy to find information, manage permissions and trace usage.
 The ownCloud Virtual File System (VFS) allow users to sync full directory trees without filling up their devices. It syncs virtual files, i.e. metadata about the kind, size and date of a file, only transferring the full file when needed. Its frictionless user experience keeps staff from using unsanctioned and unsafe means of file sharing. Its self-service features empower users and reduce work load for admins.
 
 This quickstart guide addresses the following functionalities:
