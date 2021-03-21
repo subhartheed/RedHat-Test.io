@@ -65,6 +65,8 @@ For accessing ownCloud Server through a Desktop client, do the following:
 2. Type your username and password.
 
   ![user login](https://raw.githubusercontent.com/subhartheed/RedHat-Test.io/main/docs/userlogin.png)
-  
+3. Once the user credentials are entered, the ownCloud web interface opens to your File page.
+
+  ![Files Page](
 ownCloud Desktop Synchronization Client enables the user to:
 ## Enable Users to connect to the ownCloud Server
