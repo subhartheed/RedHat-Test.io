@@ -78,4 +78,7 @@ For accessing ownCloud Server through a Mobile client, do the following:
 
 2. The first time that you use the Android app, you will see the **New Features Wizard**. This wizard gives you a quick overview of the new features in the ownCloud Android App.
 3. The first time you run your ownCloud Android app, it opens to a configuration screen. Enter your server URL, login name, password, and click **Connect**. You can alos click the eyeball to the right of your password to view your password.
+
+![login](https://raw.githubusercontent.com/subhartheed/RedHat-Test.io/main/docs/android.png)
+
 ## Enable Users to connect to the ownCloud Server
