@@ -74,6 +74,7 @@ For accessing ownCloud Server through a Mobile client, do the following:
 1. Download the ownCloud app from the [app store](https://play.google.com/store/apps/details?id=com.owncloud.android). You can also get your ownCloud Android app by logging onto your ownCloud server from your Android device using a Web browser such as *Chrome*, *Firefox*, or *Dolphin*.
 
 2. The first time that you use the Android app, you will see the **New Features Wizard**. This wizard gives you a quick overview of the new features in the ownCloud Android App.
+
 3. The first time you run your ownCloud Android app, it opens to a configuration screen. Enter your server URL, login name, password, and click **Connect**. You can alos click the eyeball to the right of your password to view your password.
     * ![login](https://raw.githubusercontent.com/subhartheed/RedHat-Test.io/main/docs/android.png)
 4. For best security, your ownCloud server should be SSL-enabled so that you can connect via HTTPS. The ownCloud Android App will test your connection as soon as you provide it and tell you if you entered it correctly. If your server has a self-signed SSL certificate, you’ll get a warning that it is not to be trusted. If this happens, click **YES** to accept the certificate and complete your account setup.
