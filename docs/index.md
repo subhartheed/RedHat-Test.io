@@ -59,7 +59,10 @@ After creating the user, you may fill their Full Name if it is different from th
 For more information on user configuration and management, refer the [Admin Manual](https://doc.owncloud.com/server/10.6/admin_manual/configuration/user/). 
 
 ## Connecting to the Owncloud Server using a Desktop or Mobile Client
-The **ownCloud Desktop Synchronization Client** is used for synchronizing files with the desktop computer. As a user, you can download the latest version of the ownCloud Desktop Synchronization Client from the [ownCloud download page](https://owncloud.org/download/), and can run on various platforms like Microsoft Windows, Mac OS X, and variants of Linux distributions.  
+As a user, you can connect to the ownCloud Server either through a Desktop or Mobile client once the Admin creates your user account.
+For accessing ownCloud Server through a Desktop client, do the following:
+1. Open the ownCloud Server on a web browser such as Edge, IE 11 or latest, Firefox 60 ESR or latest, Chrome 66 or latest, or Safari 10 or latest.
+2. Type your username and password.
 
 ownCloud Desktop Synchronization Client enables the user to:
 ## Enable Users to connect to the ownCloud Server
