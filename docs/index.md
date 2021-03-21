@@ -81,4 +81,7 @@ For accessing ownCloud Server through a Mobile client, do the following:
 
 ![login](https://raw.githubusercontent.com/subhartheed/RedHat-Test.io/main/docs/android.png)
 
+4. For best security, your ownCloud server should be SSL-enabled so that you can connect via HTTPS. The ownCloud Android App will test your connection as soon as you provide it and tell you if you entered it correctly. If your server has a self-signed SSL certificate, you’ll get a warning that it is not to be trusted. If this happens, click **YES** to accept the certificate and complete your account setup.
+
+![certificate](
 ## Enable Users to connect to the ownCloud Server
