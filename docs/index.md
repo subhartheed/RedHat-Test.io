@@ -82,7 +82,7 @@ For accessing ownCloud Server through a Mobile client, do the following:
 5. You are now ready to use the ownCloud Android App. The *All Files* screen is displayed.
     * ![All files](https://raw.githubusercontent.com/subhartheed/RedHat-Test.io/main/docs/main.png)
 
-For more information, refer [Mobile App](https://doc.owncloud.com/android/)
+For more information, refer [Mobile App for Android](https://doc.owncloud.com/android/)
 
 ## Enable Users to connect to the ownCloud Server
 An Admin user can enable other users to connect to the Owncloud server using the server's IP address and port 8080. For more information, refer the [Admin Manual](https://doc.owncloud.com/server/10.6/admin_manual/installation/docker/)
