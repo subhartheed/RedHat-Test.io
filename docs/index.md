@@ -66,10 +66,10 @@ For accessing ownCloud Server through a Desktop client, do the following:
 
   ![user login](https://raw.githubusercontent.com/subhartheed/RedHat-Test.io/main/docs/userlogin.png)
   
-3. Once the user credentials are entered, the ownCloud web interface opens to your Files page.
+3. Once the user credentials are entered, the ownCloud web interface opens to your **Files** page.
 
   ![Files Page](https://raw.githubusercontent.com/subhartheed/RedHat-Test.io/main/docs/filespage.png)
   
-  You can add, remove, or share files on the Files page, based on the access privileges set by you (if you are administering the server) or by your server administrator.
+  You can add, remove, or share files on the **Files** page, based on the access privileges set by you (if you are administering the server) or by your server administrator.
 
 ## Enable Users to connect to the ownCloud Server
