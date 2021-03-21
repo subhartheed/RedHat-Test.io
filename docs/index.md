@@ -62,9 +62,9 @@ For more information on user configuration and management, refer the [Admin Manu
 As a user, you can connect to the ownCloud Server either through a Desktop or Mobile client once the Admin creates your user account.
 For accessing ownCloud Server through a Desktop client, do the following:
 1. Open the ownCloud Server on a web browser such as *Edge, IE 11 or latest, Firefox 60 ESR or latest, Chrome 66 or latest, or Safari 10 or latest.
-2. Type your username and password.
+2. Type your username and password. 
    ![user login](https://raw.githubusercontent.com/subhartheed/RedHat-Test.io/main/docs/userlogin.png)
-3. Once the user credentials are entered, the ownCloud web interface opens to your **Files** page.
+4. Once the user credentials are entered, the ownCloud web interface opens to your **Files** page.
    ![Files Page](https://raw.githubusercontent.com/subhartheed/RedHat-Test.io/main/docs/filespage.png)
   
  You can add, remove, or share files on the **Files** page, based on the access privileges set by you (if you are administering the server) or by your server administrator. 
