@@ -87,5 +87,8 @@ For accessing ownCloud Server through a Mobile client, do the following:
 
 5. You are now ready to use the ownCloud Android App. The *All Files* screen is displayed.
 
-![All files](
+![All files](https://raw.githubusercontent.com/subhartheed/RedHat-Test.io/main/docs/main.png)
+
+For more information, refer [Mobile App](https://doc.owncloud.com/android/)
+
 ## Enable Users to connect to the ownCloud Server
