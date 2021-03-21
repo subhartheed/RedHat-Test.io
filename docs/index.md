@@ -35,15 +35,13 @@ After the installation of ownCloud server, you must configure it as per the guid
 - [Mimetypes Management](https://doc.owncloud.com/server/10.6/admin_manual/configuration/mimetypes/)
 - [Server Configuration](https://doc.owncloud.com/server/10.6/admin_manual/configuration/server/)
 - [User](https://doc.owncloud.com/server/10.6/admin_manual/configuration/user/)
-## Enable Users to connect to the ownCloud Server
-
 
 ## Add a User Account
 
 ownCloud is an enterprise file sharing service for online collaboration and storage. To access this service, the user needs to have their user account which is created and managed by the **admin group**.  
   
 The Admin can add/create a new user by the following:
-  1. Enter the new user’s **Login Name** and the initial **Password**.
+  1. Enter the **Login Name** and initial **Password** of the new user.
   2. Assign memberships to different **Groups**. This is an optional step.
   3. Click **Create**.      
            
@@ -53,4 +51,4 @@ The Admin can add/create a new user by the following:
 The **ownCloud Desktop Synchronization Client** is used for synchronizing files with the desktop computer. As a user, you can download the latest version of the ownCloud Desktop Synchronization Client from the [ownCloud download page](https://owncloud.org/download/), and can run on various platforms like Microsoft Windows, Mac OS X, and variants of Linux distributions.  
 
 ownCloud Desktop Synchronization Client enables the user to:
-
+## Enable Users to connect to the ownCloud Server
